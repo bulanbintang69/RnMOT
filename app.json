@@ -18,15 +18,15 @@
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "7849221"
     },
     "API_HASH": {
       "description": "Get this value from https://my.telegram.org",
-      "value": ""
+      "value": "ef483846c6ad56e52008e9e569c4a3b8"
     },
     "OWNER_ID": {
       "description": "Owner userid to use for getting logs..",
-      "value": ""
+      "value": "1747137573"
     },
     "CUSTOM_CAPTION": {
       "description": "(Optional)Custom caption to be added after file name in caption",
