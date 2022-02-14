@@ -23,14 +23,9 @@ async def help_user(c,m):
 @Client.on_message(filters.command("start"))
 async def start_msg(c,m):
     button = [
-               [
-                InlineKeyboardButton(
-                        "◈CHANNEL◈", url=f"https://t.me/mwklinks"),
+                [
                     InlineKeyboardButton(
-                        "◈GROUP◈", url=f"https://t.me/redbullfed")
-                ],[
-                    InlineKeyboardButton(
-                        "◈ADMIN◈", url=f"https://t.me/shamilnelli")
+                        "◈OwNeR◈", url=f"https://t.me/Zerozerozoro")
                 ]
             ]
     markup = InlineKeyboardMarkup(button) 
