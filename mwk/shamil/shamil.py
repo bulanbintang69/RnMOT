@@ -34,12 +34,12 @@ async def progress_for_pyrogram(
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-        progress = "[{0}{1}] \n<b>»PROSES😉</b>:<code>〘 {2}% 〙</code>\n".format(
-            ''.join(["🥰" for i in range(math.floor(percentage / 5))]),
-            ''.join(["🥵" for i in range(20 - math.floor(percentage / 5))]),
+        progress = "[{0}{1}] \n<b>»PROSES</b>:<code> •{2}%•</code>\n".format(
+            ''.join(["✦" for i in range(math.floor(percentage / 5))]),
+            ''.join(["✧" for i in range(10 - math.floor(percentage / 5))]),
             round(percentage, 2))
         
-        tmp = "<b>LOADING</b>" + progress + "<b>»SELESAI:</b> <code>〘{0}</code><b> of </b><code> {1}〙</code>\n<b>»KECEPATAN</b>:<code>〘 {2}/s 〙</code>\n<b>»WAKTU</b>:<code>〘 {3} 〙</code>\n".format(
+        tmp = "<b>LOADING :</b>\n" + progress + "<b>»SELESAI :</b> <code> •{0}</code><b> dari </b><code> {1}•</code>\n<b>»KECEPATAN</b> :<code> •{2}/detik•</code>\n<b>»PERKIRAAN SELESAI</b> :<code> •{3}•</code>\n".format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
