@@ -1,14 +1,11 @@
 class Translation(object):
-    START_TEXT = """**Hello,
-This is a Telegram Rename Bot by @mcubemedia 😇
+    START_TEXT = """**السلام عليكم ورحمة الله وبركاته 😇
 
-Please send me any File, i can Rename It As Per Your choices to telegram as File/Video
-
-Hit /help for more details.. and more thing waiting for u there 😉**"""
+KETIK /help UNTUK BANTUAN😉**"""
 ######################
     HELP_USER = """**1 >>Send File/Video\n2 >>Choose Your desired Option\n3 >>Wait for it to process files**"""
-    DOWNLOAD_MSG = "**Yup Bro, Downloading....**😌"
-    DOWNLOAD_FAIL_MSG = "**Sorry Baby 😔, Something Error With Your File**❎"
-    UPLOAD_MSG = "**Yeah Boy, Uploading it**🤓"
-    UPLOAD_FAIL_MSG = "**Sorry Baby 😔, Something Error With Your File**❎"
-    UPLOAD_DONE_MSG = "**Finally Uploaded Join My Update Channel.. if you like me 🤪"
+    DOWNLOAD_MSG = "📥**SEDANG MENGDOWNLOAD**📥"
+    DOWNLOAD_FAIL_MSG = "✖️**MAAF ADA KESALAHAN SAAT DOWNLOAD SILAHKAN ULANGI**✖️"
+    UPLOAD_MSG = "📥**SEDANG MENGUPLOAD, SILAHKAN TUNGGU**📤"
+    UPLOAD_FAIL_MSG = "✖️**MAAF ADA KESALAHAN SAAT UPLOAD SILAHKAN ULANGI**✖️"
+    UPLOAD_DONE_MSG = "**PROSES SELESAI, ALHAMDULILLAH**😇"
