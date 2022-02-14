@@ -14,7 +14,7 @@
   "env": {
     "TG_BOT_TOKEN": {
       "description": "Your bot token, Get it from @Botfather.",
-      "value": ""
+      "value": "5079833744:AAF9QLpuQSaN333qXlBJe3S902Xst1oM6Zg"
     },
     "APP_ID": {
       "description": "Get this value from https://my.telegram.org",
