@@ -34,12 +34,12 @@ async def progress_for_pyrogram(
         elapsed_time = TimeFormatter(milliseconds=elapsed_time)
         estimated_total_time = TimeFormatter(milliseconds=estimated_total_time)
 
-        progress = "[{0}{1}] <code> •{2}%•</code>\n".format(
+        progress = "[{0}{1}]<code> {2}%</code>\n".format(
             ''.join(["✦" for i in range(math.floor(percentage / 5))]),
             ''.join(["✧" for i in range(10 - math.floor(percentage / 5))]),
             round(percentage, 2))
         
-        tmp = progress + "»SELESAI : <code> •{0}</code> dari <code> {1}•</code>\n»KECEPATAN :<code> •{2}/detik•</code>\n»PERKIRAAN SELESAI :<code> •{3}•</code>\n".format(
+        tmp = progress + "»Selesai : <code> {0}</code> dari<code> {1}</code>\n»Kecepatan :<code> {2}/detik</code>\n»Waktu :<code> {3}</code>\n".format(
             humanbytes(current),
             humanbytes(total),
             humanbytes(speed),
@@ -76,11 +76,11 @@ def TimeFormatter(milliseconds: int) -> str:
     minutes, seconds = divmod(seconds, 60)
     hours, minutes = divmod(minutes, 60)
     days, hours = divmod(hours, 24)
-    tmp = ((str(days) + "d, ") if days else "") + \
-        ((str(hours) + "h, ") if hours else "") + \
-        ((str(minutes) + "m, ") if minutes else "") + \
-        ((str(seconds) + "s, ") if seconds else "") + \
-        ((str(milliseconds) + "ms, ") if milliseconds else "")
+    tmp = ((str(days) + "hari, ") if days else "") + \
+        ((str(hours) + "jam, ") if hours else "") + \
+        ((str(minutes) + "menit, ") if minutes else "") + \
+        ((str(seconds) + "detik, ") if seconds else "") + \
+        ((str(milliseconds) + "milidetik , ") if milliseconds else "")
     return tmp[:-2]
 
 
