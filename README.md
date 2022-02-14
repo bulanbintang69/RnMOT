@@ -1,3 +1,5 @@
+#### Deploy on Heroku
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bulanbintang69/RENAMER-FITUR-CAPTION-OTOMATIS)
 # TG-RenamerPro
 
 #### Telegram's Sassiet Rename / File Converter Bot
@@ -20,8 +22,6 @@
 #### Easy Way 
 Use [Rename Robot](https://telegram.dog/mwk_renamebot) 
 
-#### The Simple Way
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 ###### While deplying on heroku kindly add buildback of ffmpeg
 
