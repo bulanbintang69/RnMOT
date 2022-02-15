@@ -25,7 +25,7 @@ async def start_msg(c,m):
     button = [
                 [
                     InlineKeyboardButton(
-                        "◈ADNIN◈", url=f"https://t.me/Zerozerozoro")
+                        "◈ADMIN◈", url=f"https://t.me/Zerozerozoro")
                 ]
             ]
     markup = InlineKeyboardMarkup(button) 
