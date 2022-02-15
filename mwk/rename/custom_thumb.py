@@ -20,7 +20,7 @@ logging.getLogger("pyrogram").setLevel(logging.WARNING)
 
 @Client.on_message(filters.photo)
 async def save_photo(c,m):
-    v = await m.reply_text("Saving Thumbnail",True)
+    v = await m.reply_text("Thumbnail Berhasil Disave....",True)
     if m.media_group_id is not None:
         # album is sent
         download_location = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id) + "/" + str(m.media_group_id) + "/"
@@ -44,7 +44,7 @@ async def save_photo(c,m):
         except Exception as e:
           log.info(f"#Error {e}")
 
-@Client.on_message(filters.command(["deletethumb"]))
+@Client.on_message(filters.command(["hapus"]))
 async def delete_thumbnail(c,m):
     download_location = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id)
     try:
@@ -54,7 +54,7 @@ async def delete_thumbnail(c,m):
         pass
     await m.reply_text("Thumbnail Berhasil Dihapus....",quote=True)
 
-@Client.on_message(filters.command(["showthumb"]))
+@Client.on_message(filters.command(["lihat"]))
 async def show_thumbnail(c,m):
     thumb_image_path = Config.DOWNLOAD_LOCATION + "/thumb/" + str(m.from_user.id) + ".jpg"
     msgg = await m.reply_text("Cek Thumbnail...",quote=True)
@@ -82,7 +82,7 @@ async def show_thumbnail(c,m):
 
         await m.reply_photo(
         photo=thumb_image_path,
-        caption="Ini Thumbnail Yang Tersimpan!!!\nKamu Bisa Hapus Dengan Mengirim Perintah\n/deletethumb !!",
+        caption="Ini Thumbnail Yang Tersimpan!!!\nKamu Bisa Hapus Dengan Mengirim Perintah\n/hapus !!",
         quote=True
     )
 
