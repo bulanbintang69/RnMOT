@@ -37,8 +37,8 @@ async def start_msg(c,m):
 @Client.on_message(filters.command("catatan") & filters.private & filters.user(Config.OWNER_ID))
 async def log_msg(c,m):
   z =await m.reply_text("Processing..", True)
-  if os.path.exists("Catatan.txt"):
-     await m.reply_document("Log.txt", True)
+  if os.path.exists("Log.txt"):
+     await m.reply_document("Catatan.txt", True)
      await z.delete()
   else:
     await z.edit_text("Log file not found")
