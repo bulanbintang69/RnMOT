@@ -30,6 +30,7 @@ async def start_msg(c,m):
             ]
     markup = InlineKeyboardMarkup(button) 
     try:
+       await m.reply_sticker(sticker="CAACAgUAAxkBAAECXWJgtiefn2bNuYvjcasry5Lq-mzdswACRQUAAo8k-yWDStn_vuRiJx8E", quote=True)
        await m.reply_text(Translation.START_TEXT,quote=True,reply_markup=markup,disable_web_page_preview=True) 
     except Exception as e:
         log.info(str(e))
