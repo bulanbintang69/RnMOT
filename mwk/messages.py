@@ -1,7 +1,9 @@
 class Translation(object):
-    START_TEXT = """**السلام عليكم ورحمة الله وبركاته 😇
+    START_TEXT = """**السلام عليكم ورحمة الله وبركاته 😇**
 
-KETIK /help UNTUK BANTUAN😉**"""
+KETIK /panduan UNTUK BANTUAN😉
+KETIK /lihat UNTUK LIHAT THUMB
+KETIK /hapus UNTUK HAPUS THUMB"""
 ######################
     HELP_USER = """**1 >>Send File/Video\n2 >>Choose Your desired Option\n3 >>Wait for it to process files**"""
     DOWNLOAD_MSG = "📥**SEDANG MENGDOWNLOAD**📥"
