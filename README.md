@@ -1,5 +1,5 @@
 #### Deploy on Heroku
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bulanbintang69/RENAMER-FITUR-CAPTION-OTOMATIS)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/bulanbintang69/RnMOT)
 # TG-RenamerPro
 
 #### Telegram's Sassiet Rename / File Converter Bot
